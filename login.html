@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITxi</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/85e38a350c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div class="hero">
+<div class="form-box">
+   <div class="button-box">
+      <div id="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()" >Log In</button>
+      <button type="button" class="toggle-btn" onclick="register()">Register</button>
+</div>
+
+<form id="login" class="input-group">
+  <input type="text" class="input-field" placeholder="User Id" required>
+  <input type="text" class="input-field" placeholder="Enter Password" required>
+  <input type="checkbox" class="chech-box"><span> &nbsp &nbsp Remember Password</span>
+  <button type="submit" class="submit-btn"><a href="index.html">Log in</a></button>
+</form>
+<form id="register" class="input-group">
+   <input type="text" class="input-field" placeholder="User Id" required>
+   <input type="email" class="input-field" placeholder="Email Id" required>
+   <input type="text" class="input-field" placeholder="Enter Password" required>
+   <input type="checkbox" class="chech-box"><span> &nbsp &nbsp I agree to the terms & conditions</span>
+   <button type="submit" class="submit-btn"><a href="login.html">Register</a></button>
+</form>
+</div>
+</div>
+<script>
+var x = document.getElementById ("login") ;
+var y = document.getElementById ("register") ;
+var z = document.getElementById("btn");
+function register(){
+   x.style.left = "-400px";
+   y.style.left = "50px";
+   z.style.left = "110px";
+
+}
+function login(){
+   x.style.left = "50px";
+   y.style.left = "450px";
+   z.style.left = "0";
+
+}
+</script>
+</body>
+</html>

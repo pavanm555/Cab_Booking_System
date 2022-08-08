@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITxi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/85e38a350c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="booking/booking.html">BOOKINGS</a></li>
+
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Events and online programs for 2021</h1>
+    </section>
+ <!------ blog page content -------->
+ <section class="blog-content">
+     <div class="row">
+         <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2>Our Events & Online Programs for 2021</h2>
+            <p>hi hlo how r u</p>
+
+            <div class="comment-box">
+                <h3>leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter name">
+                    <input type="email" placeholder="Enter email">
+                    <textarea row="5" placeholder="your comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+            </div>
+         </div>
+         <div class="blog-right">
+             <h3>club members</h3>
+             <div>
+                 <span>Bussiness Analytics</span>
+                 <span>21</span>
+             </div>
+             <div>
+                <span>Bussiness Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Bussiness Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Bussiness Analytics</span>
+                <span>21</span>
+            </div>
+         </div>
+     </div>
+ </section>
+
+
+<!---- footer ---->
+<section class="footer">
+    <h4>About us</h4>
+    <p>Lorem ipsum dolor sit amet...</p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+
+<!------JavaScript for Toggle Menn------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
