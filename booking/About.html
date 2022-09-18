@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITxi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/85e38a350c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/VITXi.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="booking.html">BOOKINGS</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About us</h1>
+    </section>
+
+
+<!---- about us content---->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Our Foresight</h1>
+            <p>We Vitians struggle to find taxis while travelling to campus from the nearby airports 
+                or railway station. The taxi and autorickshaw fares are insane and really unfair. 
+                We need to find a way to optimise this problem to give feasible result.
+            </p>
+            <p>
+                So, We have created a website which lets the students avail all the transport facilities at 
+                reasonable rates. To optimise the travel charges we have used the current fuel rates and 
+                travel distances from major locations and are providing one-way and two-way services based 
+                on the client's request.
+            </p>
+            <a href="booking.html" class="hero-btn red-btn">BOOK NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/call_taxi.jpeg">
+        </div>
+    </div>
+</section>
+
+ <!------ blog page content -------->
+ <section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+           <img src="images/crew.jpeg">
+           <h2></h2>
+
+           <div class="comment-box">
+               <h3>leave a comment</h3>
+               <form class="comment-form">
+                   <input type="text" placeholder="Enter name">
+                   <input type="email" placeholder="Enter email">
+                   <textarea row="5" placeholder="your comment"></textarea>
+                   <button type="submit" class="hero-btn red-btn">Post Comment</button>
+               </form>
+           </div>
+        </div>
+        <div class="blog-right">
+            <h3>Our Crew</h3>
+            <div>
+                <span>PAVAN REDDY</span>
+                <span></span>
+            </div>
+            <div>
+               <span>CHARMILA REDDY</span>
+               <span></span>
+           </div>
+           <div>
+               <span>SRIHITHA REDDY</span>
+               <span></span>
+           </div>
+           <div>
+               <span>NITHIN</span>
+               <span></span>
+           </div>
+           <div>
+            <span>SHREYAS</span>
+            <span></span>
+        </div>
+        <div>
+            <span>RIYA</span>
+            <span></span>
+        </div>
+        </div>
+    </div>
+</section>
+<!---- footer ---->
+<section class="footer">
+    <h4></h4>
+    <p><b>Your safety is our priority</b></p>
+    <div class="icons">
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+
+<!------JavaScript for Toggle Menn------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
